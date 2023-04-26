@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #000000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.big {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  background: #222;
+}
+
+.images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.img1 {
+  background: url(https://avatars.mds.yandex.net/i?id=bbddc30690d52463379bd541b144a54082be3b78-8276139-images-thumbs&n=13);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 46% 0, 39% 100%, 0 100%);
+}
+
+.img2 {
+  background: url(https://avatars.mds.yandex.net/i?id=76abd13ce401aec85e51fee37001470db3724ca2-7464698-images-thumbs&n=13);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(19% 0, 87% 0, 64% 100%, 33% 100%);
+}
+
+.img3 {
+  background: url(https://avatars.mds.yandex.net/i?id=39d3f20c4ccbcc1acede44c4cee366abe7fa471b-9044992-images-thumbs&n=13);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(82% 0, 100% 0, 100% 100%, 63% 100%);
+}
+
+.big:hover .images {
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.big .images:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
